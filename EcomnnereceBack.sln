@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcomnnereceBack", "EcomnnereceBack\EcomnnereceBack.csproj", "{72968316-E99E-4ACF-8A44-8E9DC03E0E87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{75B49FD6-733F-4791-B1FC-6304B41ABD3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "Infra\Infra.csproj", "{F1601496-6F93-47EC-8DB8-575AE6D39EAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72968316-E99E-4ACF-8A44-8E9DC03E0E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72968316-E99E-4ACF-8A44-8E9DC03E0E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72968316-E99E-4ACF-8A44-8E9DC03E0E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72968316-E99E-4ACF-8A44-8E9DC03E0E87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75B49FD6-733F-4791-B1FC-6304B41ABD3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75B49FD6-733F-4791-B1FC-6304B41ABD3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75B49FD6-733F-4791-B1FC-6304B41ABD3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75B49FD6-733F-4791-B1FC-6304B41ABD3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1601496-6F93-47EC-8DB8-575AE6D39EAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1601496-6F93-47EC-8DB8-575AE6D39EAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1601496-6F93-47EC-8DB8-575AE6D39EAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1601496-6F93-47EC-8DB8-575AE6D39EAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0BDD3211-ABE9-4FBE-A509-B7D3CE0FDB3A}
+	EndGlobalSection
+EndGlobal
