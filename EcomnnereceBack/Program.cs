@@ -1,4 +1,5 @@
 using EcomnnereceBack.Data;
+using Infra.Data;
 using Infra.IRepo;
 using Infra.Repo;
 using Microsoft.EntityFrameworkCore;
@@ -12,7 +13,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped <IProductRpository, ProductRpository> ();
-
+builder.Services.AddScoped  (typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddDbContext<StoreContext>(s => s.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
 var app = builder.Build();
@@ -23,7 +25,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseStaticFiles();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
@@ -36,6 +38,7 @@ var context = Services.GetRequiredService<StoreContext>();
 try
 {
     await context.Database.MigrateAsync();
+    await SeedStoreContext.SeedAsync(context);
 }
 catch (Exception)
 {

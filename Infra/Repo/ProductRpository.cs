@@ -1,4 +1,5 @@
-﻿using EcomnnereceBack.Data;
+﻿using Core.Entities;
+using EcomnnereceBack.Data;
 using EcomnnereceBack.Entities;
 using Infra.IRepo;
 using Microsoft.EntityFrameworkCore;
@@ -21,7 +22,7 @@ namespace Infra.Repo
         }
         public async Task<IEnumerable<Product>> GetAll()
         {
-            return await ctx.Products.ToListAsync();
+            return await ctx.Products.Include(nameof(ProductBrand)).Include(nameof(ProductBrand)).ToListAsync();
         }
     }
 }
